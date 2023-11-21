@@ -18,7 +18,7 @@ class AboutPoint(models.Model):
     about = models.ForeignKey(
            "about.About",
            on_delete=models.CASCADE,
-           related_name = 'points'
+           related_name = 'points',
            )
     text = models.CharField(max_length=225)
 
@@ -28,3 +28,4 @@ class AboutPoint(models.Model):
     class Meta:
             verbose_name = 'Haqqimizda punktu'
             verbose_name_plural = 'Haqqimizda punktlari'
+ 

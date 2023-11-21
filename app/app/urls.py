@@ -10,6 +10,7 @@ urlpatterns = [
     path("", include("core.urls")),
     path("", include("account.urls")),
     path("", include("about.urls")),
+    path("", include("contact.urls")),
 ]
 if settings.DEBUG:
    urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT) 
