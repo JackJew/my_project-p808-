@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.utils import timezone
 
 
 class ContactInfo(models.Model):
@@ -27,7 +27,7 @@ class Appealing(models.Model):
     email = models.EmailField()
     subject = models.CharField(max_length=255) 
     message = models.TextField()
-    
+    created_at = models.DateTimeField(default=timezone.now)
     
     def __str__(self) -> str:
         return f'{self.full_name} - {self.email}'
