@@ -1,4 +1,4 @@
- <!-- Modal -->
+  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -9,8 +9,8 @@
           </button>
         </div>
         <div class="modal-body">
-          {% for ordeer in orders %}
-          {{order.price}}
+          {% for order in orders %}
+            {{ order.price }}
           {% endfor %}
           ...
         </div>
